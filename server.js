@@ -11,6 +11,9 @@ var clientInfo = {};
 
 // Sends current users to provided socket
 function sendCurrentUsers (socket) {
+    console.log("socket.id: " + socket.id);
+    console.log(clientInfo);
+
     var info = clientInfo[socket.id];
     var users = [];
 
